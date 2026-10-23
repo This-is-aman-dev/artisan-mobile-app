@@ -43,7 +43,6 @@ export const AuthScreen = () => {
   const [resetLoading, setResetLoading] = useState(false);
 
   const activeColor = role === 'artisan' ? Colors.artisan.primary : Colors.buyer.primary;
-  const activeBg = role === 'artisan' ? Colors.artisan.light : Colors.buyer.light;
 
   const handleSubmit = async () => {
     if (!phone || !password) {
@@ -129,8 +128,8 @@ export const AuthScreen = () => {
         <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}>
           {/* Header Title */}
           <View style={styles.header}>
-            <Text style={styles.brandTitle}>Artisan Studio AI</Text>
-            <Text style={styles.brandSubtitle}>Direct Fair-Trade Marketplace</Text>
+            <Text style={styles.brandTitle}>KalaKriti • कलाकृति</Text>
+            <Text style={styles.brandSubtitle}>Direct Heritage Craft & Fair-Trade Marketplace</Text>
           </View>
 
           {/* Role Selector Tabs */}
@@ -166,7 +165,7 @@ export const AuthScreen = () => {
 
           {/* Form Card */}
           <View style={[styles.card, { borderColor: activeColor + '30' }]}>
-            <Text style={styles.formTitle}>{isLogin ? 'Sign In to Account' : 'Create New Account'}</Text>
+            <Text style={styles.formTitle}>{isLogin ? 'Sign In to KalaKriti' : 'Join KalaKriti'}</Text>
 
             {!isLogin && (
               <View style={styles.inputGroup}>
@@ -262,7 +261,7 @@ export const AuthScreen = () => {
               {loading ? (
                 <ActivityIndicator color="#fff" />
               ) : (
-                <Text style={styles.actionBtnText}>{isLogin ? 'Sign In' : 'Create Account'}</Text>
+                <Text style={styles.actionBtnText}>{isLogin ? 'Sign In' : 'Create KalaKriti Account'}</Text>
               )}
             </TouchableOpacity>
 
@@ -385,11 +384,13 @@ const styles = StyleSheet.create({
     fontSize: 26,
     fontWeight: '800',
     color: Colors.neutral.text,
+    letterSpacing: 0.3,
   },
   brandSubtitle: {
     fontSize: 14,
     color: Colors.neutral.muted,
     marginTop: 4,
+    textAlign: 'center',
   },
   roleContainer: {
     flexDirection: 'row',

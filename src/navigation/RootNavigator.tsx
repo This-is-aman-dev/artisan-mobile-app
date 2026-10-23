@@ -47,7 +47,7 @@ const ArtisanTabNavigator = () => {
         name="Inventory"
         component={InventoryScreen}
         options={{
-          title: 'Inventory & Stock',
+          title: 'KalaKriti Studio • Stock',
           tabBarLabel: 'Stock',
           tabBarIcon: ({ color, size }) => <Package size={size} color={color} />,
         }}
@@ -56,7 +56,7 @@ const ArtisanTabNavigator = () => {
         name="CreateProduct"
         component={CreateProductScreen}
         options={{
-          title: 'AI Product Studio',
+          title: 'KalaKriti AI Studio',
           tabBarLabel: 'Add Craft',
           tabBarIcon: ({ color, size }) => <Sparkles size={size} color={color} />,
         }}
@@ -88,7 +88,7 @@ const BuyerTabNavigator = () => {
         name="Marketplace"
         component={MarketplaceScreen}
         options={{
-          title: 'Direct Craft Market',
+          title: 'KalaKriti Marketplace',
           tabBarLabel: 'Discover',
           tabBarIcon: ({ color, size }) => <ShoppingBag size={size} color={color} />,
         }}
@@ -97,7 +97,7 @@ const BuyerTabNavigator = () => {
         name="MyOrders"
         component={MyOrdersScreen}
         options={{
-          title: 'My Purchases',
+          title: 'KalaKriti Orders',
           tabBarLabel: 'Orders',
           tabBarIcon: ({ color, size }) => <Clock size={size} color={color} />,
         }}
